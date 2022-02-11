@@ -84,6 +84,10 @@ body {
   border: none;
 }
 
+.profile-time button:focus, .profile-time button:hover {
+  color: #ffffff;
+}
+
 .card {
   border-radius: 15px;
   margin-bottom: 20px;
@@ -209,7 +213,7 @@ body {
   background-size: 20%;
 }
 
-.self-care {
+.selfcare {
   background-color: #f1c65b;
   background-image: url(../images/icon-self-care.svg);
   background-repeat: no-repeat;
