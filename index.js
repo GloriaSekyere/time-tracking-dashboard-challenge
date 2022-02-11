@@ -19,7 +19,7 @@ let selfPrevious = document.getElementById("selfcare-previous");
 
 //Fetch data and convert response to json 
 const getData = async () => {
-  let response = await fetch("../data.json");
+  let response = await fetch("./data.json");
   let data = await response.json();
   return data;
 }
