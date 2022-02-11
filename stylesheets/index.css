@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  padding: 10% 10%;
+  background-color: #0f1424;
+  color: #ffffff;
+}
+
+.profile {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  background-color: #5847eb;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center center;
+  padding: 20px 0;
+}
+
+.profile-details .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center center;
+  width: 60px;
+  margin-right: 25px;
+}
+
+.profile-details .avatar img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.profile-details .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #bdc1ff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-details .name span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.profile-time button {
+  color: #6f76c8;
+  font-weight: 500;
+  background: none;
+  border: none;
+}
+
+.card {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-content {
+  height: 75%;
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 30px;
+}
+
+.content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7.5px;
+}
+
+.content-title h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content-title div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-title div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-stats .current {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.content-stats .previous {
+  color: #bdc1ff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.work {
+  background-color: #ff8c66;
+  background-image: url(../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 95% -5%;
+  background-size: 20%;
+}
+
+.play {
+  background-color: #56c2e6;
+  background-image: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 95% -5%;
+  background-size: 20%;
+}
+
+.study {
+  background-color: #ff5c7c;
+  background-image: url(../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 95% -10%;
+  background-size: 20%;
+}
+
+.exercise {
+  background-color: #4acf81;
+  background-image: url(../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 0%;
+  background-size: 20%;
+}
+
+.social {
+  background-color: #7536d3;
+  background-image: url(../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 95% -20%;
+  background-size: 20%;
+}
+
+.self-care {
+  background-color: #f1c65b;
+  background-image: url(../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 95% -20%;
+  background-size: 20%;
+}
+/*# sourceMappingURL=index.css.map */
