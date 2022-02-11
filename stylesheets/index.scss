@@ -8,13 +8,13 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  padding: 10% 10%;
   background-color: $very-dark-blue;
   color: #ffffff;
 }
 
 .main {
-  
+  width: 80%;
+  margin: 50px auto;
 }
 
 .profile {
@@ -63,15 +63,22 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  
-  button {
+
+  [type='radio'] {
+    display: none;
+  }
+
+  [type='radio'] ~ span {
     color: $desaturated-blue;
-    font-weight: 500;
-    background: none;
-    border: none;
-    &:focus, &:hover {
+    font-weight: 300;
+    &:hover {
       color: #ffffff;
+      cursor: pointer;
     }
+  }
+
+  [type='radio']:checked ~ span {
+    color: #ffffff;
   }
 }
 
@@ -107,9 +114,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
-      max-width: 100%;
-      height: auto;
+    &:hover {
+      svg path {
+        fill: #fff; //check this later
+      }
     }
   }
 }
@@ -135,7 +143,7 @@ body {
     color: $work;
     image: url(../images/icon-work.svg);
     repeat: no-repeat;
-    position: 95% -5%;
+    position: 90% -5%;
     size: 20%;
   }
 }
@@ -145,7 +153,7 @@ body {
     color: $play;
     image: url(../images/icon-play.svg);
     repeat: no-repeat;
-    position: 95% -5%;
+    position: 90% -5%;
     size: 20%;
   }
 }
@@ -155,7 +163,7 @@ body {
     color: $study;
     image: url(../images/icon-study.svg);
     repeat: no-repeat;
-    position: 95% -10%;
+    position: 90% -10%;
     size: 20%;
   }
 }
@@ -165,7 +173,7 @@ body {
     color: $exercise;
     image: url(../images/icon-exercise.svg);
     repeat: no-repeat;
-    position: 95% 0%;
+    position: 90% 0%;
     size: 20%;
   }
 }
@@ -175,7 +183,7 @@ body {
     color: $social;
     image: url(../images/icon-social.svg);
     repeat: no-repeat;
-    position: 95% -20%;
+    position: 90% -20%;
     size: 20%;
   }
 }
@@ -185,7 +193,11 @@ body {
     color: $self-care;
     image: url(../images/icon-self-care.svg);
     repeat: no-repeat;
-    position: 95% -20%;
+    position: 90% -20%;
     size: 20%;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  @import "desktop";
 }

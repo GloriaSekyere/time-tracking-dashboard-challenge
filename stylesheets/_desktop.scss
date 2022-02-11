@@ -1,0 +1,106 @@
+body { //added
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  width: 960px; //modified
+  margin: 0 auto; //modified
+  display: grid; //added
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr; //added
+  grid-column-gap: 20px; //added
+  height: 420px; //added
+}
+
+.profile {
+  border-radius: 15px;
+  margin-bottom: 0; //modified
+  grid-area: 1/1/3/2; //added
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column; //added
+  place-content: flex-start; //modified
+  padding: 25px; //modified
+  height: 275px; //added
+  .avatar {
+    margin: 0 0 30px; //modified
+  }
+  .name {
+    font-size: 30px; //modified
+  }
+}
+
+.profile-time {
+  display: flex;
+  flex-direction: column; //added
+  justify-content: space-between;
+  padding: 25px; //modified
+  height: 145px; //added
+}
+
+.cards { //added
+  grid-area: 1/2/3/5;
+  display: grid; 
+  grid-template-columns: repeat(3,1fr); 
+  grid-gap: 20px; 
+}
+
+.card {
+  margin-bottom: 0; //modified
+  height: 200px; //modified
+}
+
+.card-content {
+  height: 80%; //modified
+  padding: 30px; //modified
+  &:hover {
+    background-color: hsl(237, 45%, 31%);
+    cursor: pointer;
+  }
+}
+
+.content-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; //modified
+}
+
+.content-stats {
+  display: flex;
+  flex-direction: column; //added
+  justify-content: space-between;
+  align-items: flex-start; //modified
+
+  .current {
+    font-size: 35px; //modified
+    margin-bottom: 10px; //added
+  }
+}
+
+//all sizes modified
+.work {
+  background-size: 30%; 
+}
+
+.play {
+  background-size: 30%;
+}
+
+.study {
+  background-size: 30%;
+}
+
+.exercise {
+  background-size: 30%;
+}
+
+.social {
+  background-size: 30%;
+}
+
+.selfcare {
+  background-size: 30%;
+}
